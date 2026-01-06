@@ -1,168 +1,34 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Il mio piccolo shop</title>
+<section class="progressi">
+  <h2>📊 I miei progressi</h2>
 
-<style>
-:root{--mint:#2dd4bf;--mint-soft:#a7f3d0;--text:#0f172a;}
-*{box-sizing:border-box;}
-body{margin:0;font-family:Inter,system-ui,-apple-system,Arial;background:#fff;color:var(--text);}
-
-/* HEADER */
-header{position:sticky;top:0;background:#fff;border-bottom:1px solid #e5e7eb;
-  padding:12px 20px;display:flex;justify-content:space-between;align-items:center;}
-.logo{font-weight:800;letter-spacing:.3px;}
-.logo span{color:var(--mint);}
-nav a{margin-left:14px;text-decoration:none;color:#0f172a;font-weight:600;
-  padding:8px 14px;border-radius:999px;}
-nav a:hover{background:var(--mint-soft);}
-
-/* HERO */
-.hero{padding:64px 20px 40px;text-align:center;background:linear-gradient(180deg,#ecfeff,#fff);}
-.hero h1{margin:0 0 10px;}
-.tag{display:inline-block;background:#ecfeff;color:#0f766e;padding:4px 10px;border-radius:999px;
-  font-size:12px;border:1px solid #ccfbf1;margin-top:6px;}
-
-/* SECTIONS */
-.section{padding:32px 20px;max-width:900px;margin:0 auto;}
-
-/* GRID */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px;margin-top:18px;}
-.grid img,.grid video{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:18px;
-  border:1px solid #e5e7eb;background:#f9fafb;transition:transform .15s,box-shadow .15s;cursor:pointer;}
-.grid img:hover,.grid video:hover{transform:scale(1.02);box-shadow:0 14px 32px rgba(0,0,0,.06);}
-
-/* CARDS */
-.card{background:#fff;border:1px solid #e5e7eb;border-radius:22px;padding:18px;
-  box-shadow:0 6px 24px rgba(0,0,0,.04);}
-
-/* FOOTER */
-footer{text-align:center;padding:26px 16px 40px;font-size:13px;color:#6b7280;
-  border-top:1px solid #e5e7eb;margin-top:40px;}
-
-/* PROGRESS */
-.bar-wrap{margin-top:12px;border:1px solid #e5e7eb;border-radius:14px;overflow:hidden;}
-.bar{height:14px;background:var(--mint);width:0%;}
-
-/* INFO */
-.info-box{background:#f0fdfa;border:1px solid #99f6e4;border-radius:18px;
-  padding:16px;margin-top:14px;font-size:14px;}
-
-/* MODAL zoom */
-.modal{position:fixed;inset:0;background:rgba(0,0,0,.75);display:none;
-  align-items:center;justify-content:center;z-index:1000;}
-.modal.open{display:flex;}
-.modal-content{max-width:90vw;max-height:90vh;border-radius:18px;background:#000;}
-</style>
-</head>
-
-<body>
-
-<header>
-  <div class="logo">Piccolo <span>Shop</span></div>
-  <nav>
-    <a href="#items">Articoli</a>
-    <a href="#videos">Video</a>
-    <a href="#savings">Risparmi</a>
-    <a href="#about">Chi sono</a>
-    <a href="#info">Info</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <h1>Ciao! Benvenuto nel mio piccolo shop 👋</h1>
-  <p>Vendo cose per risparmiare e imparare.</p>
-  <span class="tag">Ho 10 anni — sto imparando passo dopo passo!</span>
-</section>
-
-<section id="items" class="section">
-  <h2>I miei articoli</h2>
-  <div class="grid">
-    <img src="foto1.jpeg" alt="Articolo 1"><img src="foto2.jpeg" alt="Articolo 2">
-    <img src="foto3.jpeg" alt="Articolo 3"><img src="foto4.jpeg" alt="Articolo 4">
-    <img src="foto5.jpeg" alt="Articolo 5"><img src="foto6.jpeg" alt="Articolo 6">
-    <img src="foto7.jpeg" alt="Articolo 7"><img src="foto8.jpeg" alt="Articolo 8">
-    <img src="foto9.jpeg" alt="Articolo 9"><img src="foto10.jpeg" alt="Articolo 10">
-    <img src="foto11.jpeg" alt="Articolo 11"><img src="foto12.jpeg" alt="Articolo 12">
-    <img src="foto13.jpeg" alt="Articolo 13"><img src="foto14.jpeg" alt="Articolo 14">
-    <img src="foto15.jpeg" alt="Articolo 15"><img src="foto16.jpeg" alt="Articolo 16">
-    <img src="foto17.jpeg" alt="Articolo 17"><img src="foto18.jpeg" alt="Articolo 18">
-    <img src="foto19.jpeg" alt="Articolo 19"><img src="foto20.jpeg" alt="Articolo 20">
+  <div class="barra">
+    <div class="etichetta">
+      iPhone 12 — 0€ / 400€
+      <span>0%</span>
+    </div>
+    <div class="track">
+      <div class="fill" style="width: 0%;"></div>
+    </div>
   </div>
-  <p class="tag">Nuovi articoli presto!</p>
-</section>
 
-<section id="videos" class="section">
-  <h2>Video</h2>
-  <div class="grid">
-    <video controls src="video1.mp4"></video>
-    <video controls src="video2.mp4"></video>
-    <video controls src="video3.mp4"></video>
-    <video controls src="video4.mp4"></video>
-    <video controls src="video5.mp4"></video>
+  <div class="barra">
+    <div class="etichetta">
+      Vendite totali — 0 articoli
+      <span>0%</span>
+    </div>
+    <div class="track">
+      <div class="fill" style="width: 0%;"></div>
+    </div>
+  </div>
+
+  <div class="barra">
+    <div class="etichetta">
+      Obiettivo del mese
+      <span>0%</span>
+    </div>
+    <div class="track">
+      <div class="fill" style="width: 0%;"></div>
+    </div>
   </div>
 </section>
 
-<section id="savings" class="section card">
-  <h2>I miei risparmi</h2>
-  <p>Sto risparmiando per: <strong>iPhone 12</strong> 📱</p>
-  <p>Progresso attuale: <strong>€0</strong></p>
-  <div class="bar-wrap"><div class="bar" style="width:0%;"></div></div>
-  <p class="tag">Aggiorno la barra quando vendo qualcosa.</p>
-</section>
-
-<section id="about" class="section">
-  <h2>Chi sono</h2>
-  <div class="info-box">
-    Mi piace rivendere cose, imparare a risparmiare e creare siti web.
-    Uso il web solo con il permesso dei miei genitori.
-  </div>
-</section>
-
-<section id="info" class="section">
-  <h2>Info importanti</h2>
-  <div class="info-box">
-    Questo sito è solo per mostrare le cose che metto in vendita.<br><br>
-    <strong>I genitori gestiscono messaggi, prezzi e pagamenti.</strong><br>
-    Non condivido indirizzo, telefono o altre informazioni personali.
-  </div>
-</section>
-
-<footer>
-  © 2026 — Piccolo Shop. Imparo e risparmio passo dopo passo.
-</footer>
-
-<!-- MODAL -->
-<div class="modal" id="modal">
-  <img class="modal-content" id="modal-img">
-  <video class="modal-content" id="modal-video" controls></video>
-</div>
-
-<script>
-const modal=document.getElementById("modal");
-const modalImg=document.getElementById("modal-img");
-const modalVideo=document.getElementById("modal-video");
-
-document.querySelectorAll("#items img,#videos video").forEach(el=>{
-  el.addEventListener("click",()=>{
-    modal.classList.add("open");
-    if(el.tagName==="IMG"){
-      modalImg.src=el.src;modalImg.style.display="block";
-      modalVideo.style.display="none";modalVideo.pause();
-    }else{
-      modalVideo.src=el.src;modalVideo.style.display="block";
-      modalImg.style.display="none";
-    }
-  });
-});
-
-modal.addEventListener("click",()=>{
-  modal.classList.remove("open");
-  modalVideo.pause();
-});
-</script>
-
-</body>
-</html>
